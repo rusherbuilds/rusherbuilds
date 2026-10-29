@@ -1,0 +1,4 @@
+README_BACKUP_*.md
+backups/
+.DS_Store
+__pycache__/

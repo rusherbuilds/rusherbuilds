@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="description" content="Software engineering, AI systems, automation, and cybersecurity portfolio." />
+  <title>Rusherbuilds | Systems & Software</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <div class="shell">
+    <header class="header" id="top">
+      <a class="brand" href="#top" aria-label="Back to homepage"><span class="brand-sigil">R<span class="pulse-dot"></span></span><span class="brand-caption">R// <strong>BUILDS</strong></span></a>
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#focus">Expertise</a>
+        <a href="#work">Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a id="nav-github" class="nav-action" href="https://github.com/rusherbuilds" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a>
+      <button class="mobile-menu" id="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Toggle menu"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="live-dot"></span> SYSTEM STATUS: ONLINE <span class="sep">/</span> OPEN TO EXPLORATION</div>
+          <p class="hero-index">01 / THE INTRODUCTION</p>
+          <h1 id="hero-title">BUILDING <br/><span class="outline-type">BEYOND</span> <br/><span class="accent-type">THE EXPECTED<span class="dot">.</span></span></h1>
+          <p class="hero-desc" id="hero-subtext">AI systems, security-minded software, and engineering that turns ambitious ideas into things that actually work.</p>
+          <div class="role-line"><span class="chevron">&gt;_</span> <span id="typewriter" aria-live="off">AI-powered tools</span><span class="cursor" aria-hidden="true"></span></div>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#work">EXPLORE MY WORK <span>↗</span></a>
+            <a class="btn btn-ghost" id="hero-github" href="https://github.com/rusherbuilds" target="_blank" rel="noopener noreferrer">VIEW GITHUB <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <div class="orb-field"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><div class="radial radial-a"></div><div class="radial radial-b"></div><div class="orbit-core"><img class="orbit-avatar" src="avatar.png" alt="" /></div><div class="satellite satellite-a"></div><div class="satellite satellite-b"></div><div class="axis-label axis-top">NODE_01 // ACTIVE</div><div class="axis-label axis-bottom">BUILD > TEST > SHIP</div><div class="crosshair crosshair-a">+</div><div class="crosshair crosshair-b">+</div></div>
+        </div>
+        <div class="hero-bottom"><span><span class="signal">↘</span> SCROLL TO DECODE</span><span>EG // 2026</span></div>
+      </section>
+
+      <section id="about" class="section about observe" aria-labelledby="about-title">
+        <div class="section-top"><span class="section-tag">[ 02 ] ABOUT THE BUILDER</span><span class="muted">A PRACTICAL MINDSET</span></div>
+        <div class="about-grid"><h2 id="about-title">LESS HYPE.<br/><span class="gradient-text">MORE SYSTEMS.</span></h2><div class="about-copy"><p id="about-content">I explore the intersection of artificial intelligence, software engineering, cybersecurity, and automation.</p><p>Curiosity is useful. Shipping something that survives testing is better.</p><div class="meta-row"><span class="meta-bullet"></span><span id="about-location">BASED IN EGYPT</span><span class="meta-divider"></span><span>ALWAYS LEARNING</span></div></div></div>
+      </section>
+
+      <section class="numbers observe" aria-label="Public GitHub metrics"><div class="num-item"><strong id="repo-stat">—</strong><small>PUBLIC REPOS</small></div><div class="num-item"><strong id="follower-stat">—</strong><small>FOLLOWERS</small></div><div class="num-item"><strong id="following-stat">—</strong><small>FOLLOWING</small></div><div class="num-item num-static"><span>∞</span><small>CURIOSITY</small></div></section>
+
+      <section id="focus" class="section observe" aria-labelledby="focus-title"><div class="section-top"><span class="section-tag">[ 03 ] MY FOCUS</span><span class="muted">SPECIALIZATIONS</span></div><div class="focus-head"><h2 id="focus-title">ENGINEERING<br/><span class="gradient-text">WITH INTENT.</span></h2><p>Complex systems should produce clear outcomes. These are the areas I keep exploring and building around.</p></div><div id="focus-grid" class="focus-grid"></div><div class="tools-head"><span class="tiny-label">CURRENT TOOLKIT / INTERESTS</span><span class="line"></span></div><div id="tool-tags" class="tool-tags"></div></section>
+
+      <section id="work" class="section observe" aria-labelledby="work-title"><div class="section-top"><span class="section-tag">[ 04 ] OPEN SOURCE</span><span class="muted">LIVE FROM GITHUB API</span></div><div class="work-heading"><h2 id="work-title">SELECTED<br/><span class="gradient-text">REPOSITORIES.</span></h2><a id="all-repos" class="text-link" href="https://github.com/rusherbuilds?tab=repositories" target="_blank" rel="noopener noreferrer">ALL REPOSITORIES <span>↗</span></a></div><p class="work-intro">Public projects, automatically loaded from GitHub. No fake case studies or inflated numbers.</p><div class="repos-grid" id="repos-grid" aria-live="polite"><div class="repo-loading">CONNECTING TO GITHUB ...</div></div></section>
+
+      <section id="tools" class="section observe" aria-labelledby="custom-tools-title">
+        <div class="section-top"><span class="section-tag">[ 05 ] MY TOOLS & UTILITIES</span><span class="muted">CUSTOM PROJECTS</span></div>
+        <div class="work-heading"><h2 id="custom-tools-title">MY TOOLS<br/><span class="gradient-text">& UTILITIES.</span></h2></div>
+        <p class="work-intro">Tools I build or maintain. Add yours in <code>docs/config.js</code> under <code>myTools</code>.</p>
+        <div class="repos-grid" id="custom-tools-grid"><div class="repo-loading">PERSONAL TOOLS CAN BE LISTED HERE.</div></div>
+      </section>
+
+      <section id="contact" class="contact section observe"><div class="section-top"><span class="section-tag">[ 06 ] GET IN TOUCH</span><span class="muted">END OF TRANSMISSION</span></div><div class="contact-body"><div><p class="contact-kicker">HAVE SOMETHING INTERESTING?</p><h2>LET'S BUILD<br/><span class="gradient-text">WHAT'S NEXT.</span></h2></div><a id="contact-github" class="contact-orb" href="https://github.com/rusherbuilds" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">↗</a></div><div class="contact-foot"><span>FIND ME ON <a id="footer-gh" href="https://github.com/rusherbuilds" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></span><button id="copy-url" type="button" class="copy-btn">COPY PAGE LINK ↗</button></div></section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> <span id="footer-name">RUSHERBUILDS</span></span><span>DESIGNED TO BUILD / NOT TO BLEND IN</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </div>
+</body>
+</html>

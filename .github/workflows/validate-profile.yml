@@ -1,0 +1,21 @@
+name: Validate profile package
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check publisher shell syntax
+        run: bash -n scripts/APPLY_LINUX_MAC.sh
+      - name: Run offline package checks
+        run: python3 -m unittest discover -s tests -v
